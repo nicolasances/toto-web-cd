@@ -2,6 +2,7 @@
 .api-container.toto-nodems {border-left: 3px solid #00BCD4;}
 .api-container.toto-ms {border-left: 3px solid #F44336;}
 .api-container.toto-ci {border-left: 3px solid #CDDC39;}
+.api-container.toto-web {border-left: 3px solid #4CAF50;}
 .api-container.running {border-right: 5px solid #2196F3;}
 .api-container.not-running {border-right: 5px solid #F44336;}
 

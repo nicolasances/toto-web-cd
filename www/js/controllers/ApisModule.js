@@ -30,8 +30,11 @@ ApisModule.controller("ApisController", function($rootScope, $scope, $http, $tim
 			// Initialize APIs to "smoke failed"
 			$scope.apis[i].smoke = false;
 
+			// Initialize to true if toto-web
+			if ($scope.apis[i].type == 'toto-web') $scope.apis[i].smoke = true;
+
 			// Smoke the API
-			$scope.smokeApi($scope.apis[i].name);
+			if ($scope.apis[i].type != 'toto-web') $scope.smokeApi($scope.apis[i].name);
 
 		}
 	}
@@ -86,7 +89,7 @@ ApisModule.controller("ApisController", function($rootScope, $scope, $http, $tim
 
 					if ($scope.apis[i].localhost == data.microservice) {
 
-						$scope.smokeApi($scope.apis[i].name);
+						if ($scope.apis[i].type != 'toto-web') $scope.smokeApi($scope.apis[i].name);
 					}
 				}
 
