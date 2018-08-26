@@ -1,0 +1,70 @@
+
+body {background: #e5e6e6;}
+md-content {background: #e5e6e6;}
+
+#sidenav {background: #073f42; max-width: 80px; z-index: 2; padding-top: 12px;}
+#sidenav .icon {padding: 12px; margin: 12px auto; border-radius: 50%; outline: none;}
+#sidenav .icon.selected {background: white;}
+#sidenav .icon md-icon {fill: #efefef; outline: none;}
+#sidenav .icon.selected md-icon {fill: #0097A7;}
+
+#ng-view {padding: 12px; background: #e5e6e6;}
+
+.circle {border-radius: 50%;}
+.circle.green {background: #4CAF50;}
+.circle.red {background: #F44336;}
+
+.uppercase {text-transform: uppercase;}
+.centered {text-align: center;}
+.bold {font-weight: bold;}
+
+md-icon.huge {width: 90px; height: 90px;}
+
+.card {margin: 12px; padding: 18px; background: white; border-radius: 1px; position: relative; overflow: scroll;}
+.card .huge-text {font-size: 1.5em;}
+.card .big-text {font-size: 1.2em;}
+.card .normal-text {font-size: 1em;}
+.card .small-text {font-size: 0.8em;}
+.card .tiny-text {font-size: 0.6em;}
+
+.card.small {height: 200px; max-height: 200px;}
+.card.medium {height: 424px; max-height: 424px;}
+
+.card .header {color: rgba(0,0,0,0.8); margin-bottom: 24px;}
+.card .header .title {}
+
+.card.red {border-left: 5px solid #E53935;}
+.card.teal {border-left: 5px solid #00897B;}
+.card.green {border-left: 5px solid #4CAF50;}
+
+.card.acquafill {background: #b6f7f1;}
+
+.apis-grid {}
+.apis-grid .api-container {width: 100%; height: calc(100% - 2px); margin: 2px 1px; color: rgba(0,0,0,0.8); text-align: center; border: 1px solid #efefef; box-sizing: border-box;}
+.apis-grid .api-container .title {padding: 9px 0; font-size: 1em; }
+.apis-grid .api-container md-icon {width: 30%; height: 30%;}
+.apis-grid .api-container.running {border: 1px solid #8BC34A;}
+.apis-grid .api-container.down {border: 3px solid red;}
+
+toto-data-list {}
+toto-data-list .item {margin: 3px 0;}
+toto-data-list .item .text {color: rgba(0,0,0,0.7); font-size: 0.9em;}
+
+.darker-primary-color  { background: #006064;}
+.dark-primary-color    { background: #0097A7;}
+.default-primary-color { background: #00BCD4;}
+.light-primary-color   { background: #B2EBF2;}
+.text-primary-color    { color: #FFFFFF; }
+.accent-color          { background: #8BC34A; }
+.primary-text-color    { color: #212121; }
+.secondary-text-color  { color: #757575; }
+.divider-color         { border-color: #BDBDBD; }
+
+.dark-red-color        { background: #C62828; }
+.darker-red-color      { background: #B71C1C; }
+
+.default-primary-color md-icon { fill: white; }
+.dark-primary-color md-icon { fill: white; }
+.dark-red-color md-icon { fill: white; }
+
+md-toolbar.dark-primary-color { background: #0097A7 !important;}

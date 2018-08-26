@@ -1,0 +1,18 @@
+
+.api-container.toto-nodems {border-left: 3px solid #00BCD4;}
+.api-container.toto-ms {border-left: 3px solid #F44336;}
+.api-container.toto-ci {border-left: 3px solid #CDDC39;}
+.api-container.running {border-right: 5px solid #2196F3;}
+.api-container.not-running {border-right: 5px solid #F44336;}
+
+.list-container {margin: 6px 0;}
+.list-container .list-title {font-size: 16px; opacity: 0.7;}
+.list-container .list-subtitle {font-size: 12px; opacity: 0.6;}
+.list-container .apis-container {margin-top: 12px;}
+.list-container .apis-container .api-container {margin: 3px 0; background: white; border-radius: 3px; padding: 9px; color: rgba(0,0,0,0.8);}
+.list-container .apis-container .api-container .title {font-size: 14px;}
+.list-container .apis-container .api-container .subtitle {font-size: 10px; margin-top: 3px;}
+.list-container .apis-container .api-container .actions-container {outline: none;}
+.list-container .apis-container .api-container .actions-container .action {margin: 0 6px; outline: none;}
+.list-container .apis-container .api-container .actions-container .action md-icon {outline: none;}
+.list-container .apis-container .api-container .status {font-size: 12px; margin-right: 12px; opacity: 0.7;}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/app.css" />
+<link rel="stylesheet" href="css/forms.css" />
+<link rel="stylesheet" href="css/apis.css" />
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+<link rel="stylesheet" href="https://cdn.quilljs.com/1.3.2/quill.snow.css">
+
+<link rel="manifest" href="manifest.json">
+
+<meta name="viewport" content="initial-scale=1">
+<meta name="google-signin-client_id" content="209706877536-4h516ud369nuaakag4gbtlvq4d735ag9.apps.googleusercontent.com">
+<meta name="theme-color" content="#0097A7" />
+
+<script src="js/lib/angular.min.js"></script>
+<script src="js/lib/angular-route.js"></script>
+<script src="js/lib/angular-animate.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
+<script src="https://apis.google.com/js/platform.js"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="js/lib/moment.min.js"></script>
+<script src="js/lib/progressbar.min.js"></script>
+<script src="js/util/google-signin-init.js"></script>
+<script src="conf/conf.js"></script>
+<script src="js/toto.js"></script>
+<script src="js/controllers/ApisModule.js"></script>
+<script src="js/services/APIListService.js"></script>
+<script src="js/services/CIReleaseService.js"></script>
+
+</head>
+<body class="app-theme-cyan" ng-app="toto" ng-controller="totoController" layout="column">
+
+	<md-toolbar ng-class="['dark-primary-color', 'md-whiteframe-3dp']">
+		<div class="md-toolbar-tools teal">
+			<!-- <span class="title" flex>{{currentMenu}}</span> -->
+      <span class="title" flex>Toto Continuous Delivery Dashboard</span>
+			<md-button class="md-icon-button" aria-label="Home">
+				<md-icon md-svg-src="images/svg/home.svg" ng-click="go('/')"></md-icon>
+			</md-button>
+		</div>
+	</md-toolbar>
+
+	<section layout="row" flex>
+
+		<div id="sidenav" ng-show="gtXs" layout="column" flex md-whiteframe="5">
+			<div ng-class="['icon', selectedMenu == '/apis' || selectedMenu == '/' ? 'selected' : '']" ng-click="go('/apis')"><md-icon md-svg-src="images/svg/microservices.svg"></md-icon></div>
+			<!-- <div ng-class="['icon', selectedMenu == '/server' ? 'selected' : '']" ng-click="go('/server')"><md-icon md-svg-src="images/svg/network-server.svg"></md-icon></div> -->
+			<div flex></div>
+		</div>
+
+		<md-content flex>
+
+			<div id="ng-view" ng-view flex></div>
+
+		</md-content>
+	</section>
+
+
+</body>
+</html>

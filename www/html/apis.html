@@ -1,0 +1,28 @@
+
+<div class="list-container">
+  <div class="list-title">Available Toto APIs</div>
+  <div class="list-subtitle">{{apis.length}} found</div>
+
+  <div class="apis-container" layout="column">
+    <div ng-class="['api-container', api.type, api.smoke ? 'running' : 'not-running']" ng-repeat="api in apis | orderBy : 'name'" layout="row" md-whiteframe="1">
+      <div layout="column" flex>
+        <div class="title">{{api.name}}</div>
+        <div class="subtitle">{{api.localhost}}</div>
+      </div>
+      <div layout="column">
+          <div flex></div>
+          <div class="status">{{api.statusDesc}}</div>
+          <div flex></div>
+      </div>
+      <div class="actions-container" layout="column">
+          <div flex></div>
+          <div layout="row">
+            <div class="action" ng-click="deploy(api)" ng-if="api.type != 'toto-ci'">
+              <md-icon md-svg-src="images/svg/rocket-ship.svg"></md-icon>
+            </div>
+          </div>
+          <div flex></div>
+      </div>
+    </div>
+  </div>
+</div>
