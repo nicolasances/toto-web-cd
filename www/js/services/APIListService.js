@@ -22,7 +22,7 @@ APIListServiceModule.factory('APIListService', [ '$http', '$rootScope', '$locati
 		 */
 		smokeAPI : function(api) {
 
-			return $http.get(apiUrl + '/' + api + '/');
+			return $http.get(apiUrl + '/' + api.replace('-', '/') + '/');
 
 		}
 
