@@ -1,11 +1,11 @@
 
 var cid = function() {
 
-	let ts = moment().tz('Europe/Rome').format('YYYYMMDDHHmmssSSS');
+	let ts = moment().format('YYYYMMDDHHmmssSSS');
 
 	let random = (Math.random() * 100000).toFixed(0).padStart(5, '0');
 
-	return tz + '-' + random;
+	return ts + '-' + random;
 
 }
 
