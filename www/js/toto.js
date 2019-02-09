@@ -1,4 +1,14 @@
 
+var cid = function() {
+
+	let ts = moment().tz('Europe/Rome').format('YYYYMMDDHHmmssSSS');
+
+	let random = (Math.random() * 100000).toFixed(0).padStart(5, '0');
+
+	return tz + '-' + random;
+
+}
+
 var totoModule = angular.module("toto", [
 	"ngRoute", "ngMaterial",
 	"ApisModule"
@@ -10,6 +20,7 @@ var totoModule = angular.module("toto", [
 			if (config.url.indexOf('/apis/') == -1) return config;
 
 			config.headers['Authorization'] = 'Basic ' + apiBasicAuthToken;
+			config.headers['x-correlation-id'] = cid();
 
 			return config;
 		},
