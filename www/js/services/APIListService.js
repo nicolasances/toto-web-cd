@@ -9,7 +9,7 @@ APIListServiceModule.factory('APIListService', [ '$http', '$rootScope', '$locati
 		 */
 		getAPIs : function() {
 
-			return $http.get(apiUrl + '/api/list/apis');
+			return $http.get(apiUrl + '/api-list/apis');
 
 		},
 
