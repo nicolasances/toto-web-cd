@@ -123,6 +123,7 @@ md-toolbar.dark-primary-color { background: #0097A7 !important;}
   margin: 12px 0;
   cursor: pointer;
   color: rgba(255, 255, 255, 0.4);
+  outline: none;
 }
 .toto-app-container .toto-menu .menu-group md-icon {
   fill: rgba(255, 255, 255, 0.4);
