@@ -1,0 +1,43 @@
+/**
+ * Dashboard widget styles
+ */
+.toto-dashboard-widget {
+  border-radius: 3px;
+  padding: 12px;
+  margin: 12px;
+  background-color: #22222d95;
+  box-shadow: 5px 1px 21px -1px #07282f;
+  display: flex;
+  flex-direction: column;
+}
+
+.toto-dashboard-widget .header {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 11px;
+  margin: -12px -12px 0 -12px;
+  padding: 12px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+}
+.toto-dashboard-widget .header .title {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+.toto-dashboard-widget .header .icon-container {
+  margin-top: -6px;
+}
+.toto-dashboard-widget .header .icon-container .mat-icon-button {
+  width: 32px;
+  height: 32px;
+  line-height: 0;
+  min-width: 0;
+}
+.toto-dashboard-widget .header mat-icon {
+  width: 18px;
+  height: 18px;
+}

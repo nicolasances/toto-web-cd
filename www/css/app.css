@@ -1,14 +1,40 @@
 
-body {background: #e5e6e6;}
-md-content {background: #e5e6e6;}
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
 
-#sidenav {background: #073f42; max-width: 80px; z-index: 2; padding-top: 12px;}
-#sidenav .icon {padding: 12px; margin: 12px auto; border-radius: 50%; outline: none;}
-#sidenav .icon.selected {background: white;}
-#sidenav .icon md-icon {fill: #efefef; outline: none;}
-#sidenav .icon.selected md-icon {fill: #0097A7;}
+/* You can add global styles to this file, and also import other style files */
+body {
+  /* background-color: #00acc1; */
+  /* background-color: #06434a; */
+  /* background-color: #b2ebf2; */
+  /* background-color: #1a7f8c; */
+  background-image: linear-gradient(to bottom right, #1b616b , #042f35);
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  -webkit-font-smoothing: auto !important;
+}
 
-#ng-view {padding: 12px; background: #e5e6e6;}
+md-content {
+  background: transparent;
+  display: flex !important;
+  flex-direction: column;
+  flex: 1;
+}
+
+#ng-view {
+  padding: 12px;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
 
 .circle {border-radius: 50%;}
 .circle.green {background: #4CAF50;}
@@ -68,3 +94,59 @@ toto-data-list .item .text {color: rgba(0,0,0,0.7); font-size: 0.9em;}
 .dark-red-color md-icon { fill: white; }
 
 md-toolbar.dark-primary-color { background: #0097A7 !important;}
+
+/**
+ * Menu
+ */
+.toto-app-container .toto-menu {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+}
+.toto-app-container .toto-menu .toto-logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+.toto-app-container .toto-menu .toto-logo-container .toto-thelabel {
+  color: rgba(255, 255, 255, 0.85);
+  padding-top: 7px;
+  font-size: 20px;
+  text-transform: lowercase;
+}
+.toto-app-container .toto-menu .menu-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 12px 0;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.4);
+}
+.toto-app-container .toto-menu .menu-group md-icon {
+  fill: rgba(255, 255, 255, 0.4);
+}
+.toto-app-container .toto-menu .menu-group.selected {
+  color: rgba(255, 255, 255, 0.9);
+}
+.toto-app-container .toto-menu .menu-group.selected md-icon {
+  fill: rgba(255, 255, 255, 0.9);
+}
+.toto-app-container .toto-menu .menu-group.selected:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+.toto-app-container .toto-menu .menu-group.selected:hover md-icon {
+  fill: rgba(255, 255, 255, 0.9);
+}
+.toto-app-container .toto-menu .menu-group:hover {
+  color: white;
+}
+.toto-app-container .toto-menu .menu-group:hover md-icon {
+  fill: white;
+}
+.toto-app-container .toto-menu .menu-group .text-container {
+  text-transform: uppercase;
+  font-size: 9px;
+  padding-top: 10px;
+}

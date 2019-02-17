@@ -1,10 +1,20 @@
 
-<div class="list-container">
-  <div class="list-title">Available Toto Microservices</div>
-  <div class="list-subtitle">{{apis.length}} found</div>
+<div class="toto-dashboard-widget list-container">
+
+  <div class="header">
+    <div class="title">
+      Available Toto Microservices ({{apis.length}})
+    </div>
+    <div class="icon-container">
+      <!-- <button mat-icon-button color="accent" (click)="search()">
+        <mat-icon svgIcon="search"></mat-icon>
+      </button> -->
+      <!-- <svg-icon src="assets/img/search.svg" [applyCss]="true" [svgStyle]="{ 'width.px': 18, 'height.px': 18, 'fill':'white' }" ></svg-icon> -->
+    </div>
+  </div>
 
   <div class="apis-container" layout="column">
-    <div ng-class="['api-container', api.type, api.smoke ? 'running' : 'not-running']" ng-repeat="api in apis | orderBy : 'name'" layout="row" md-whiteframe="1">
+    <div ng-class="['api-container', api.type, api.smoke ? 'running' : 'not-running']" ng-repeat="api in apis | orderBy : 'name'" layout="row">
       <div layout="column" flex>
         <div class="title">{{api.name}}</div>
         <div class="subtitle">{{api.localhost}}</div>

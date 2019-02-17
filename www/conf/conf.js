@@ -1,3 +1,3 @@
 
 var apiUrl = 'https://imatzdev.it/apis';
-var apiBasicAuthToken = 'dG90bzpzdG8=';
+var apiBasicAuthToken = 'c3RvOnRvdG8=';
