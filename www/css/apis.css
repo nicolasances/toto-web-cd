@@ -14,9 +14,11 @@
 .list-container .list-subtitle {font-size: 12px; opacity: 0.6;}
 .list-container .apis-container {overflow-y: scroll; display: block;}
 .list-container .apis-container .api-container {padding: 9px;}
-.list-container .apis-container .api-container .title {font-size: 14px;}
-.list-container .apis-container .api-container .subtitle {font-size: 10px; margin-top: 3px;}
+.list-container .apis-container .api-container .title {font-size: 12px;}
+.list-container .apis-container .api-container .subtitle {font-size: 9px; margin-top: 3px; opacity: 0.7;}
 .list-container .apis-container .api-container .actions-container {outline: none;}
 .list-container .apis-container .api-container .actions-container .action {margin: 0 6px; outline: none;}
+.list-container .apis-container .api-container .actions-container .action:hover {cursor: pointer;}
 .list-container .apis-container .api-container .actions-container .action md-icon {fill: rgba(255, 255, 255, 0.7); outline: none;}
+.list-container .apis-container .api-container .actions-container .action:hover md-icon {fill: white;}
 .list-container .apis-container .api-container .status {font-size: 12px; margin-right: 12px; opacity: 0.7;}
