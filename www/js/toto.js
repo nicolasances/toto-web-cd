@@ -47,6 +47,10 @@ var totoModule = angular.module("toto", [
 		$rootScope.selectedMenu = path;
 	};
 
+	$scope.navigateToLogs = function() {
+		window.location.href = 'https://imatzdev.it/dataflow-monitor/';
+	}
+
 	/**
 	 * Function that toggles the visibility of the navbar
 	 */
