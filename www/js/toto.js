@@ -48,7 +48,10 @@ var totoModule = angular.module("toto", [
 	};
 
 	$scope.navigateToLogs = function() {
-		window.location.href = 'https://imatzdev.it/dataflow-monitor/';
+
+		let domainUrl = apiUrl.substring(0, apiUrl.indexOf('/apis'));
+
+		window.location.href = domainUrl + '/dataflow-monitor/';
 	}
 
 	/**
